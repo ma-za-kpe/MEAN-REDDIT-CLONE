@@ -1,0 +1,16 @@
+shielded-gorge-44519
+https://shielded-gorge-44519.herokuapp.com/ | https://git.heroku.com/shielded-gorge-44519.git
+
+mongolab-deep-90400 as MONGODB_URI
+
+curl -H "Content-Type: application/json" -d '{"name":"mLab Support"}' https://shielded-gorge-44519.herokuapp.com/users/api/addVote
+
+https://shielded-gorge-44519.herokuapp.com/users/api/getVotes ==> to view posts in browser
+
+To get mlab connection name
+heroku config:get MONGODB_URI ====>>>>
+mongodb://heroku_xk4mxwlw:9elopospuvfp3iopihlh24odu6@ds131698.mlab.com:31698/heroku_xk4mxwlw
+
+To open heroku ==============>>>
+heroku addons:open mongolab====>>>
+https://addons-sso.heroku.com/apps/125bec87-74a0-452d-963c-487c8fb48689/addons/512e3dfb-8612-48de-9f5a-c18c820ff929
