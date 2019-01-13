@@ -1,9 +1,23 @@
 const mongoose = require('mongoose');
 
 const voteSchema = new mongoose.Schema({
-  name: {
+  title: {
     type: String,
     required: true
+  },
+  link: {
+    type: String,
+    required: true
+  },
+  upVote: {
+    type: Number,
+    required: true,
+    default: 0
+  },
+  downVote: {
+    type: Number,
+    required: true,
+    default: 0
   }
 });
 
