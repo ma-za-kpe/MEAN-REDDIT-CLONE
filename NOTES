@@ -3,8 +3,12 @@ https://shielded-gorge-44519.herokuapp.com/ | https://git.heroku.com/shielded-go
 
 mongolab-deep-90400 as MONGODB_URI
 
-curl -H "Content-Type: application/json" -d '{"name":"mLab Support"}' https://shielded-gorge-44519.herokuapp.com/users/api/addVote
-
+curl -H "Content-Type: application/json" -d '{
+	"title":"papaye",
+	"link":"https://www.papaye.com",
+	"upVote": 13,
+        "downVote": 8
+}' https://shielded-gorge-44519.herokuapp.com/users/api/addVote
 https://shielded-gorge-44519.herokuapp.com/users/api/getVotes ==> to view posts in browser
 
 To get mlab connection name
